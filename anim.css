@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+
+}
+
+.maintext{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 4rem;
+    letter-spacing: 3px;
+    font-weight: bolder;
+    position: relative;
+    width: 60%;
+    margin: auto;
+    animation: myframes 5s ease-in-out 2s infinite ;
+    z-index: 1;
+    
+}
+.subtext{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    position: relative;
+    margin: auto;
+    width: 70%;
+    
+    
+    /* animation: myframes 3s ease-in-out 2s ; */
+
+}
+/* text animation sytling syntax 
+.element{
+    animation: [name] [duration] [timing-function] [delay] [iteration-count] [direction] [ fill-mode] [play-state];
+
+    .element{
+        animation: myframes 2s ease-in-out 0s infinite normal forwards paused ;
+
+}
+
+*/
+@keyframes myframes {
+   0%{ opacity: 1;
+font-size: 3rem;}
+   30%{ color: brown;
+    opacity: 0.5;
+
+font-size: 2rem;}
+    60% { color: blue;
+            opacity: 0.8;
+            font-size: 1rem;
+    }
+    80%{ color: red;
+    opacity: 0.4;
+font-size: 3rem;}
+    100%{ opacity: 1;
+     color: black;
+    font-size: 2rem;}
+}
